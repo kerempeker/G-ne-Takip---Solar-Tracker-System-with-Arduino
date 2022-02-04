@@ -1,11 +1,12 @@
 //Servo motor kütüphanesi
 #include <Servo.h>
+#include <LDR.h>
 //Değişken tanımları
  
-int ldrsagu = 0;                // top-right LDR girişi                         
-int ldrsolu = 1;               // top-left LDR  girişi                         
-int ldrsaga = 2;               // bottom-right LDR  girişi                    
-int ldrsola = 3;               // bottom-left LDR   girişi                 
+int ldrsagu = 1;                // top-right LDR girişi                         
+int ldrsolu = 3;               // top-left LDR  girişi                         
+int ldrsaga = 4;               // bottom-right LDR  girişi                    
+int ldrsola = 5;               // bottom-left LDR   girişi                 
 int solu,sagu,sola,saga ;
 
 //Servoların tanımlanması.
@@ -20,8 +21,8 @@ void setup()
   Serial.println("CLEARDATA");                       //Bir önceki verilerin temizlenmesi
   Serial.println("LABEL,t,voltage,current,power");   //Terminaldeki sütun başlıklarının tanımlanması
   
-  servo_updown.attach(5);             //Aşağı yukarı servonun hareketi
-  servo_rightleft.attach(6);          //Sağ sol servonun hareketi
+  servo_updown.attach(2);             //Aşağı yukarı servonun hareketi
+  servo_rightleft.attach(3);          //Sağ sol servonun hareketi
 }
 void loop()
 {  
