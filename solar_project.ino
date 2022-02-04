@@ -65,12 +65,12 @@ void solartracker(){
       if (abs(diffazi) >= threshold_value){       
        if (diffazi > 0) {                          //Sağ ve sol LDR sensörlerin aldığı değerlerin farkı ölçüm hassasiyeti değerinden büyükse pozisyonu değiştir.
         if (servo_sagsol.read() < 180) {
-          servo_sagsol.write((servo_updown.read() + 1));
+          servo_sagsol.write((servo_asyuk.read() + 1));
         }
       }
       if (diffazi <  0) {
         if (servo_sagsol.read() > 0) {
-          servo_sagsol.write((servo_updown.read() - 1));
+          servo_sagsol.write((servo_asyuk.read() - 1));
         }
       }
     }
