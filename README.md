@@ -73,6 +73,8 @@ How Can It Be Improved?
 The system can work more effectively by processing the data read from 4 sensors separately.
 -If the Solar Panel (with storage component) is connected to the A5 analog pin, which I added in one part in the code, it can be seen how much energy is in the solar system with an LED screen to be added to the system.
 -Changes can be made in the body design for the more effective operation of LDR sensors.
+-Moving Average function can be add.
+-Units can upload.
 --------------------------------------------------
 Okuduğunuz için çok teşekkür ederim. Başka sorularınız varsa, lütfen benimle iletişime geçmekten çekinmeyin. Ayrıca Nasıl Geliştirilebilir? bölümü başta olmak üzere önerileriniz benim için çok kıymetli.
 
